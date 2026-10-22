@@ -1,0 +1,48 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# build output
+/.next/
+/.vinext/
+/dist/
+/out/
+*.tsbuildinfo
+next-env.d.ts
+
+# local runtime state
+/.wrangler/
+/.sites-runtime/
+/.agents/
+/.codex/
+/work/
+/outputs/
+
+# environment / secrets — never commit these
+.env
+.env.*
+!.env.example
+.dev.vars
+*.pem
+
+# platform-specific project metadata
+/.openai/hosting.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+pnpm-debug.log*
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# scratch space
+/_staging/
+/_tmp/
+/coverage/
+
+# uncompressed seed intermediates
+/seed/*.sql

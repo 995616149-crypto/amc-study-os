@@ -1,0 +1,433 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1789813783380,
+      "tag": "0000_true_zuras",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1789823784134,
+      "tag": "0001_fair_redwing",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1790251200000,
+      "tag": "0002_amc_v294_bank",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1790251200003,
+      "tag": "0003_amc_v294_data_0001",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1790251200004,
+      "tag": "0004_amc_v294_data_0002",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1790251200005,
+      "tag": "0005_amc_v294_data_0003",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1790251200006,
+      "tag": "0006_amc_v294_data_0004",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1790251200007,
+      "tag": "0007_amc_v294_data_0005",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1790251200008,
+      "tag": "0008_amc_v294_data_0006",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "6",
+      "when": 1790251200009,
+      "tag": "0009_amc_v294_data_0007",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "6",
+      "when": 1790251200010,
+      "tag": "0010_amc_v294_data_0008",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "6",
+      "when": 1790251200011,
+      "tag": "0011_amc_v294_data_0009",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "6",
+      "when": 1790251200012,
+      "tag": "0012_amc_v294_data_0010",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "6",
+      "when": 1790251200013,
+      "tag": "0013_amc_v294_data_0011",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "6",
+      "when": 1790251200014,
+      "tag": "0014_amc_v294_data_0012",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "6",
+      "when": 1790251200015,
+      "tag": "0015_amc_v294_data_0013",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "6",
+      "when": 1790251200016,
+      "tag": "0016_amc_v294_data_0014",
+      "breakpoints": true
+    },
+    {
+      "idx": 17,
+      "version": "6",
+      "when": 1790251200017,
+      "tag": "0017_amc_v294_data_0015",
+      "breakpoints": true
+    },
+    {
+      "idx": 18,
+      "version": "6",
+      "when": 1790251200018,
+      "tag": "0018_amc_v294_data_0016",
+      "breakpoints": true
+    },
+    {
+      "idx": 19,
+      "version": "6",
+      "when": 1790251200019,
+      "tag": "0019_amc_v294_data_0017",
+      "breakpoints": true
+    },
+    {
+      "idx": 20,
+      "version": "6",
+      "when": 1790251200020,
+      "tag": "0020_amc_v294_data_0018",
+      "breakpoints": true
+    },
+    {
+      "idx": 21,
+      "version": "6",
+      "when": 1790251200021,
+      "tag": "0021_amc_v294_data_0019",
+      "breakpoints": true
+    },
+    {
+      "idx": 22,
+      "version": "6",
+      "when": 1790251200022,
+      "tag": "0022_amc_v294_data_0020",
+      "breakpoints": true
+    },
+    {
+      "idx": 23,
+      "version": "6",
+      "when": 1790251200023,
+      "tag": "0023_amc_v294_data_0021",
+      "breakpoints": true
+    },
+    {
+      "idx": 24,
+      "version": "6",
+      "when": 1790251200024,
+      "tag": "0024_amc_v294_data_0022",
+      "breakpoints": true
+    },
+    {
+      "idx": 25,
+      "version": "6",
+      "when": 1790251200025,
+      "tag": "0025_amc_v294_data_0023",
+      "breakpoints": true
+    },
+    {
+      "idx": 26,
+      "version": "6",
+      "when": 1790251200026,
+      "tag": "0026_amc_v294_data_0024",
+      "breakpoints": true
+    },
+    {
+      "idx": 27,
+      "version": "6",
+      "when": 1790251200027,
+      "tag": "0027_amc_v294_data_0025",
+      "breakpoints": true
+    },
+    {
+      "idx": 28,
+      "version": "6",
+      "when": 1790251200028,
+      "tag": "0028_amc_v294_data_0026",
+      "breakpoints": true
+    },
+    {
+      "idx": 29,
+      "version": "6",
+      "when": 1790251200029,
+      "tag": "0029_amc_v294_data_0027",
+      "breakpoints": true
+    },
+    {
+      "idx": 30,
+      "version": "6",
+      "when": 1790251200030,
+      "tag": "0030_amc_v294_data_0028",
+      "breakpoints": true
+    },
+    {
+      "idx": 31,
+      "version": "6",
+      "when": 1790251200031,
+      "tag": "0031_amc_v294_data_0029",
+      "breakpoints": true
+    },
+    {
+      "idx": 32,
+      "version": "6",
+      "when": 1790251200032,
+      "tag": "0032_amc_v294_data_0030",
+      "breakpoints": true
+    },
+    {
+      "idx": 33,
+      "version": "6",
+      "when": 1790251200033,
+      "tag": "0033_amc_v294_data_0031",
+      "breakpoints": true
+    },
+    {
+      "idx": 34,
+      "version": "6",
+      "when": 1790251200034,
+      "tag": "0034_amc_v294_data_0032",
+      "breakpoints": true
+    },
+    {
+      "idx": 35,
+      "version": "6",
+      "when": 1790251200035,
+      "tag": "0035_amc_v294_data_0033",
+      "breakpoints": true
+    },
+    {
+      "idx": 36,
+      "version": "6",
+      "when": 1790251200036,
+      "tag": "0036_amc_v294_data_0034",
+      "breakpoints": true
+    },
+    {
+      "idx": 37,
+      "version": "6",
+      "when": 1790251200037,
+      "tag": "0037_amc_v294_data_0035",
+      "breakpoints": true
+    },
+    {
+      "idx": 38,
+      "version": "6",
+      "when": 1790251200038,
+      "tag": "0038_amc_v294_data_0036",
+      "breakpoints": true
+    },
+    {
+      "idx": 39,
+      "version": "6",
+      "when": 1790251200039,
+      "tag": "0039_amc_v294_data_0037",
+      "breakpoints": true
+    },
+    {
+      "idx": 40,
+      "version": "6",
+      "when": 1790251200040,
+      "tag": "0040_amc_v294_finalize",
+      "breakpoints": true
+    },
+    {
+      "idx": 41,
+      "version": "6",
+      "when": 1790251200041,
+      "tag": "0041_guidance_cache",
+      "breakpoints": true
+    },
+    {
+      "idx": 42,
+      "version": "6",
+      "when": 1790251200042,
+      "tag": "0042_direct_australian_guidance",
+      "breakpoints": true
+    },
+    {
+      "idx": 43,
+      "version": "6",
+      "when": 1790429506930,
+      "tag": "0043_greedy_hairball",
+      "breakpoints": true
+    },
+    {
+      "idx": 44,
+      "version": "6",
+      "when": 1790433545392,
+      "tag": "0044_clumsy_firebrand",
+      "breakpoints": true
+    },
+    {
+      "idx": 45,
+      "version": "6",
+      "when": 1790489900045,
+      "tag": "0045_canonical_learning_contract",
+      "breakpoints": true
+    },
+    {
+      "idx": 46,
+      "version": "6",
+      "when": 1790489900046,
+      "tag": "0046_canonical_learning_candidates",
+      "breakpoints": true
+    },
+    {
+      "idx": 47,
+      "version": "6",
+      "when": 1790489900047,
+      "tag": "0047_semantic_intent_staging",
+      "breakpoints": true
+    },
+    {
+      "idx": 48,
+      "version": "6",
+      "when": 1790489900048,
+      "tag": "0048_semantic_classifier_diagnostics",
+      "breakpoints": true
+    },
+    {
+      "idx": 49,
+      "version": "6",
+      "when": 1790489900049,
+      "tag": "0049_pass_a_raw_capture",
+      "breakpoints": true
+    },
+    {
+      "idx": 50,
+      "version": "6",
+      "when": 1790543405505,
+      "tag": "0050_busy_justice",
+      "breakpoints": true
+    },
+    {
+      "idx": 51,
+      "version": "6",
+      "when": 1790543405506,
+      "tag": "0051_pass_a_safety_gate",
+      "breakpoints": true
+    },
+    {
+      "idx": 52,
+      "version": "6",
+      "when": 1790543405507,
+      "tag": "0052_practice_position",
+      "breakpoints": true
+    },
+    {
+      "idx": 53,
+      "version": "6",
+      "when": 1790543405508,
+      "tag": "0053_source_answer_recovery",
+      "breakpoints": true
+    },
+    {
+      "idx": 54,
+      "version": "6",
+      "when": 1790543405509,
+      "tag": "0054_source_answer_recovery_promotion_state",
+      "breakpoints": true
+    },
+    {
+      "idx": 55,
+      "version": "6",
+      "when": 1790543405510,
+      "tag": "0055_source_answer_recovery_taxonomy",
+      "breakpoints": true
+    },
+    {
+      "idx": 56,
+      "version": "6",
+      "when": 1790543405511,
+      "tag": "0056_emidici_source",
+      "breakpoints": true
+    },
+    {
+      "idx": 57,
+      "version": "6",
+      "when": 1790990400000,
+      "tag": "0057_current_answer_versions",
+      "breakpoints": true
+    },
+    {
+      "idx": 58,
+      "version": "6",
+      "when": 1791076800000,
+      "tag": "0058_owner_browser_session",
+      "breakpoints": true
+    },
+    {
+      "idx": 59,
+      "version": "6",
+      "when": 1791163200000,
+      "tag": "0059_owner_identity_binding",
+      "breakpoints": true
+    },
+    {
+      "idx": 60,
+      "version": "6",
+      "when": 1791249600000,
+      "tag": "0060_owner_password_credentials",
+      "breakpoints": true
+    }
+  ]
+}

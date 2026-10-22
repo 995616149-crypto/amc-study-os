@@ -1,0 +1,22 @@
+{
+  "pages": [
+    {
+      "pdf_page": 1250,
+      "file": "p1250.jpeg",
+      "xref": 6418,
+      "px_w": 2473,
+      "px_h": 3497,
+      "ext": "jpeg",
+      "colorspace": 3,
+      "bytes": 1069138,
+      "page_rect_pt": [
+        612.0,
+        860.62
+      ],
+      "px_per_pt_x": 4.04085,
+      "px_per_pt_y": 4.063326,
+      "n_images_on_page": 1,
+      "lossless_extraction": true
+    }
+  ]
+}

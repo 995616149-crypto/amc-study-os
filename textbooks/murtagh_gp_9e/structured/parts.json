@@ -1,0 +1,243 @@
+{
+  "book_id": "book:murtagh-gp-9e",
+  "scope": "FULL",
+  "count": 12,
+  "parts": [
+    {
+      "id": "part:murtagh-gp-9e:01",
+      "title": "The basis of general practice",
+      "number": 1,
+      "printed_page_start": null,
+      "pdf_page_start": null,
+      "chapters": [
+        "chapter:murtagh-gp-9e:001",
+        "chapter:murtagh-gp-9e:002",
+        "chapter:murtagh-gp-9e:003",
+        "chapter:murtagh-gp-9e:004",
+        "chapter:murtagh-gp-9e:005",
+        "chapter:murtagh-gp-9e:006",
+        "chapter:murtagh-gp-9e:007",
+        "chapter:murtagh-gp-9e:008"
+      ]
+    },
+    {
+      "id": "part:murtagh-gp-9e:02",
+      "title": "Diagnostic perspective in general practice",
+      "number": 2,
+      "printed_page_start": 71,
+      "pdf_page_start": 81,
+      "chapters": [
+        "chapter:murtagh-gp-9e:009",
+        "chapter:murtagh-gp-9e:010",
+        "chapter:murtagh-gp-9e:011",
+        "chapter:murtagh-gp-9e:012",
+        "chapter:murtagh-gp-9e:013",
+        "chapter:murtagh-gp-9e:014",
+        "chapter:murtagh-gp-9e:015",
+        "chapter:murtagh-gp-9e:016",
+        "chapter:murtagh-gp-9e:017",
+        "chapter:murtagh-gp-9e:018",
+        "chapter:murtagh-gp-9e:019",
+        "chapter:murtagh-gp-9e:020",
+        "chapter:murtagh-gp-9e:021",
+        "chapter:murtagh-gp-9e:022",
+        "chapter:murtagh-gp-9e:023"
+      ]
+    },
+    {
+      "id": "part:murtagh-gp-9e:03",
+      "title": "Problem solving in general practice",
+      "number": 3,
+      "printed_page_start": 253,
+      "pdf_page_start": 263,
+      "chapters": [
+        "chapter:murtagh-gp-9e:024",
+        "chapter:murtagh-gp-9e:025",
+        "chapter:murtagh-gp-9e:026",
+        "chapter:murtagh-gp-9e:027",
+        "chapter:murtagh-gp-9e:028",
+        "chapter:murtagh-gp-9e:029",
+        "chapter:murtagh-gp-9e:030",
+        "chapter:murtagh-gp-9e:031",
+        "chapter:murtagh-gp-9e:032",
+        "chapter:murtagh-gp-9e:033",
+        "chapter:murtagh-gp-9e:034",
+        "chapter:murtagh-gp-9e:035",
+        "chapter:murtagh-gp-9e:036",
+        "chapter:murtagh-gp-9e:037",
+        "chapter:murtagh-gp-9e:038",
+        "chapter:murtagh-gp-9e:039",
+        "chapter:murtagh-gp-9e:040",
+        "chapter:murtagh-gp-9e:041",
+        "chapter:murtagh-gp-9e:042",
+        "chapter:murtagh-gp-9e:043",
+        "chapter:murtagh-gp-9e:044",
+        "chapter:murtagh-gp-9e:045",
+        "chapter:murtagh-gp-9e:046",
+        "chapter:murtagh-gp-9e:047",
+        "chapter:murtagh-gp-9e:048",
+        "chapter:murtagh-gp-9e:049",
+        "chapter:murtagh-gp-9e:050",
+        "chapter:murtagh-gp-9e:051",
+        "chapter:murtagh-gp-9e:052",
+        "chapter:murtagh-gp-9e:053",
+        "chapter:murtagh-gp-9e:054",
+        "chapter:murtagh-gp-9e:055",
+        "chapter:murtagh-gp-9e:056",
+        "chapter:murtagh-gp-9e:057",
+        "chapter:murtagh-gp-9e:058",
+        "chapter:murtagh-gp-9e:059",
+        "chapter:murtagh-gp-9e:060",
+        "chapter:murtagh-gp-9e:061",
+        "chapter:murtagh-gp-9e:062",
+        "chapter:murtagh-gp-9e:063",
+        "chapter:murtagh-gp-9e:064",
+        "chapter:murtagh-gp-9e:065",
+        "chapter:murtagh-gp-9e:066"
+      ]
+    },
+    {
+      "id": "part:murtagh-gp-9e:04",
+      "title": "Mental health",
+      "number": 4,
+      "printed_page_start": 817,
+      "pdf_page_start": 827,
+      "chapters": [
+        "chapter:murtagh-gp-9e:067",
+        "chapter:murtagh-gp-9e:068",
+        "chapter:murtagh-gp-9e:069",
+        "chapter:murtagh-gp-9e:070"
+      ]
+    },
+    {
+      "id": "part:murtagh-gp-9e:05",
+      "title": "Chronic disease management",
+      "number": 5,
+      "printed_page_start": 857,
+      "pdf_page_start": 867,
+      "chapters": [
+        "chapter:murtagh-gp-9e:071",
+        "chapter:murtagh-gp-9e:072",
+        "chapter:murtagh-gp-9e:073",
+        "chapter:murtagh-gp-9e:074",
+        "chapter:murtagh-gp-9e:075",
+        "chapter:murtagh-gp-9e:076",
+        "chapter:murtagh-gp-9e:077",
+        "chapter:murtagh-gp-9e:078",
+        "chapter:murtagh-gp-9e:079",
+        "chapter:murtagh-gp-9e:080",
+        "chapter:murtagh-gp-9e:081"
+      ]
+    },
+    {
+      "id": "part:murtagh-gp-9e:06",
+      "title": "Child and adolescent health",
+      "number": 6,
+      "printed_page_start": 953,
+      "pdf_page_start": 963,
+      "chapters": [
+        "chapter:murtagh-gp-9e:082",
+        "chapter:murtagh-gp-9e:083",
+        "chapter:murtagh-gp-9e:084",
+        "chapter:murtagh-gp-9e:085",
+        "chapter:murtagh-gp-9e:086",
+        "chapter:murtagh-gp-9e:087",
+        "chapter:murtagh-gp-9e:088",
+        "chapter:murtagh-gp-9e:089"
+      ]
+    },
+    {
+      "id": "part:murtagh-gp-9e:07",
+      "title": "Women's health",
+      "number": 7,
+      "printed_page_start": 1047,
+      "pdf_page_start": 1057,
+      "chapters": [
+        "chapter:murtagh-gp-9e:090",
+        "chapter:murtagh-gp-9e:091",
+        "chapter:murtagh-gp-9e:092",
+        "chapter:murtagh-gp-9e:093",
+        "chapter:murtagh-gp-9e:094",
+        "chapter:murtagh-gp-9e:095",
+        "chapter:murtagh-gp-9e:096",
+        "chapter:murtagh-gp-9e:097",
+        "chapter:murtagh-gp-9e:098",
+        "chapter:murtagh-gp-9e:099",
+        "chapter:murtagh-gp-9e:100"
+      ]
+    },
+    {
+      "id": "part:murtagh-gp-9e:08",
+      "title": "Men's health",
+      "number": 8,
+      "printed_page_start": 1151,
+      "pdf_page_start": 1161,
+      "chapters": [
+        "chapter:murtagh-gp-9e:101",
+        "chapter:murtagh-gp-9e:102",
+        "chapter:murtagh-gp-9e:103",
+        "chapter:murtagh-gp-9e:104",
+        "chapter:murtagh-gp-9e:105"
+      ]
+    },
+    {
+      "id": "part:murtagh-gp-9e:09",
+      "title": "Sexual health",
+      "number": 9,
+      "printed_page_start": 1189,
+      "pdf_page_start": 1199,
+      "chapters": [
+        "chapter:murtagh-gp-9e:106",
+        "chapter:murtagh-gp-9e:107",
+        "chapter:murtagh-gp-9e:108",
+        "chapter:murtagh-gp-9e:109"
+      ]
+    },
+    {
+      "id": "part:murtagh-gp-9e:10",
+      "title": "Problems of the skin",
+      "number": 10,
+      "printed_page_start": 1229,
+      "pdf_page_start": 1239,
+      "chapters": [
+        "chapter:murtagh-gp-9e:110",
+        "chapter:murtagh-gp-9e:111",
+        "chapter:murtagh-gp-9e:112",
+        "chapter:murtagh-gp-9e:113",
+        "chapter:murtagh-gp-9e:114",
+        "chapter:murtagh-gp-9e:115",
+        "chapter:murtagh-gp-9e:116",
+        "chapter:murtagh-gp-9e:117",
+        "chapter:murtagh-gp-9e:118"
+      ]
+    },
+    {
+      "id": "part:murtagh-gp-9e:11",
+      "title": "Accident and emergency medicine",
+      "number": 11,
+      "printed_page_start": 1341,
+      "pdf_page_start": 1351,
+      "chapters": [
+        "chapter:murtagh-gp-9e:119",
+        "chapter:murtagh-gp-9e:120",
+        "chapter:murtagh-gp-9e:121",
+        "chapter:murtagh-gp-9e:122",
+        "chapter:murtagh-gp-9e:123"
+      ]
+    },
+    {
+      "id": "part:murtagh-gp-9e:12",
+      "title": "Health of specific groups",
+      "number": 12,
+      "printed_page_start": 1413,
+      "pdf_page_start": 1423,
+      "chapters": [
+        "chapter:murtagh-gp-9e:124",
+        "chapter:murtagh-gp-9e:125",
+        "chapter:murtagh-gp-9e:126",
+        "chapter:murtagh-gp-9e:127",
+        "chapter:murtagh-gp-9e:128"
+      ]
+    }
+  ]
+}

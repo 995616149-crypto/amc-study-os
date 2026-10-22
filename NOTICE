@@ -1,0 +1,49 @@
+# NOTICE
+
+This repository contains two distinct classes of material, under two distinct sets
+of terms.
+
+## 1. Application code — MIT
+
+Everything under `app/`, `lib/`, `components/`, `hooks/`, `db/`, `scripts/`,
+`tools/`, `cloud/`, `sites-plugin/`, plus the root configuration files, is released
+under the MIT license in `LICENSE`.
+
+## 2. Bundled study content — NOT MIT, third-party rights retained
+
+The content below was collected for personal study and research. It is included so
+the application can be evaluated in the state it was built for, not as a grant of
+any right to redistribute it.
+
+| Path | Content | Rights holder |
+| --- | --- | --- |
+| `drizzle/0003*` – `drizzle/00xx*_data_*.sql` | MCQ question bank, options, source metadata | Original question-bank publishers (e.g. Emedici; the Vernon Marshall MCQ handbook referenced in `sources`) |
+| `drizzle/*canonical*`, `lib/topic-*.json` | Derived topic taxonomy and mappings | Derived work over the above |
+| `seed/textbook_seed.sql.gz`, `textbooks/`, `public/safe-visual-v2-9-6/` | John Murtagh, *General Practice*, 9th edition — text, structure, figures | Elsevier / McGraw-Hill (as applicable to the edition) |
+| `public/emidici-assets/` | Question figures | Original question-bank publishers |
+
+These materials are **not** covered by the MIT license. They remain the property of
+their respective rights holders. They are provided for personal, non-commercial
+study and for technical evaluation of the software. No warranty of fitness, accuracy
+or currency is given: clinical content reflects the source era and must not be used
+for patient care.
+
+### Takedown
+
+If you hold rights to any bundled content and want it removed, open an issue in this
+repository (or contact the maintainer through the repository's listed contact). The
+relevant directory or migration range will be removed promptly. The application is
+designed so that content can be removed without touching code:
+
+- question bank → delete the `drizzle/*_data_*.sql` migrations
+- textbook → delete `seed/textbook_seed.sql.gz` and `textbooks/`
+- figures → delete `public/emidici-assets/`
+
+With the content removed the app still builds and runs; it simply has no questions
+to serve until you supply your own.
+
+## 3. Third-party software
+
+Runtime dependencies are declared in `package.json` and remain under their own
+licenses. `vendor/shadcn-tailwind-4.13.0.LICENSE.md` covers the vendored shadcn
+styles.

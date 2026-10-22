@@ -1,0 +1,19 @@
+{
+  "canonical": 3621,
+  "mapped": 3621,
+  "unmapped": 0,
+  "active": 1322,
+  "active_mapped": 1322,
+  "specialty_only_unresolved": 0,
+  "stable_node_ids": true,
+  "alias_merge": true,
+  "duplicate_nodes": 0,
+  "canonical_nodes": 578,
+  "mapping_status_counts": {
+    "ANSWER_TOPIC": 308,
+    "MATCHED_ONTOLOGY": 1863,
+    "TASK_LEVEL_FALLBACK": 1373,
+    "TITLE_TOPIC": 77
+  },
+  "generated_at": "2026-09-25T13:55:00Z"
+}

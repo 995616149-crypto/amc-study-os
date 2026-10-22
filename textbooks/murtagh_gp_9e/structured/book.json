@@ -1,0 +1,23 @@
+{
+  "book_id": "book:murtagh-gp-9e",
+  "title": "Murtagh's General Practice, 9th edition",
+  "scope": "FULL",
+  "source_pdf_pages": 1556,
+  "hierarchy": "Book > Part > Chapter > Section > Subsection > Block (SOURCE hierarchy; not mapped onto the AMC canonical taxonomy)",
+  "printed_page_offset": -10,
+  "parts": 12,
+  "chapters": 131,
+  "sections": 8420,
+  "blocks": 35521,
+  "figures": 899,
+  "tables": 641,
+  "block_type_counts": {
+    "heading": 8782,
+    "paragraph": 18822,
+    "discarded": 6372,
+    "figure": 899,
+    "table": 641,
+    "equation": 5
+  },
+  "generated": "2026-10-01T04:39:24+0800"
+}

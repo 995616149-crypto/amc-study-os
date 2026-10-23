@@ -9,7 +9,8 @@
   "scripts": {
     "install:ci": "bash scripts/install-pnpm.sh",
     "prepare": "node scripts/ensure-built.mjs",
-    "dev": "node scripts/run-framework.mjs dev",
+    "dev": "node scripts/ensure-built.mjs && node scripts/start-preview.mjs",
+    "dev:hmr": "node scripts/run-framework.mjs dev",
     "build": "node scripts/run-framework.mjs build",
     "check:chapter-block-contract": "node scripts/check-chapter-block-contract.mjs",
     "start": "node scripts/start-preview.mjs",

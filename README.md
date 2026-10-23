@@ -45,7 +45,11 @@ node scripts/setup-db.mjs
 npm run dev
 ```
 
-The app is now at <http://localhost:5173>.
+The app is now at <http://localhost:8787>.
+
+`npm run dev` builds if `dist/` is missing or stale, then serves the built Worker
+through Wrangler on `127.0.0.1:8787`. The first run therefore takes a minute or
+two longer while it compiles; later runs reuse the build.
 
 `scripts/setup-db.mjs` is idempotent: migrations are recorded in `d1_migrations`,
 and the textbook seed is skipped when rows already exist. Pass `--force` to re-run
@@ -142,10 +146,34 @@ exactly.
 
 ## Local development notes
 
-- Dev server: `npm run dev` (vinext + Vite, HMR, port 5173)
-- Built preview: `npm start` (Wrangler, shares `.wrangler/state` with dev)
-- Restart after moving the checkout; Vite records the running server in `.vinext/`
+- `npm run dev` — builds when needed, then serves the Worker at <http://localhost:8787>.
+  No hot reload; re-run after a change.
+- `npm start` — same server, skips the staleness check (assumes `dist/` is current).
+- `npm run dev:hmr` — the upstream vinext dev server (port 5173) with hot reload.
+  **Only works inside the hosting platform**: it forwards requests to a local
+  `sites.test` service that does not exist on a normal machine, so it fails with
+  `Error: read ECONNRESET` or HTTP 502. Use `npm run dev` unless you are debugging
+  the framework itself.
+- Restart after moving the checkout; Wrangler records the running server in `.wrangler/`
 - `.wrangler/`, `.next/`, `.vinext/`, `dist/` are disposable
+
+### Troubleshooting
+
+**`npm run dev` prints `Error: read ECONNRESET` and exits.**
+You are on the upstream HMR path. Since the fix in `scripts/run-framework.mjs`,
+`npm run dev` no longer takes it; if you invoked `npm run dev:hmr` explicitly,
+switch back. See the note above for why that path needs the hosting platform.
+
+**`localhost` refuses the connection / nothing listens on the port.**
+The dev server only binds after the build completes. Watch the terminal: you should
+see `[ensure-built] build finished.` followed by `Ready on http://127.0.0.1:8787`.
+If the process exits before that line, run `npm run build` on its own to surface
+the real error.
+
+**A proxy or VPN is running.**
+`scripts/run-framework.mjs` clears `HTTP(S)_PROXY` for the HMR path because Vite's
+dependency optimizer makes loopback requests that a proxy cannot serve. The default
+`npm run dev` path does not use Vite's optimizer, so a proxy is harmless there.
 
 ---
 

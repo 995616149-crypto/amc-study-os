@@ -17,7 +17,8 @@ import { Button } from "@/components/ui/button";
  * session, never by whoever happens to open the page first.
  */
 export function LocalPasswordSignIn() {
-  const [mode, setMode] = useState<"loading" | "login" | "setup">("loading");
+  const [mode, setMode] = useState<"loading" | "login" | "setup" | "uninitialized">("loading");
+  const [databaseReady, setDatabaseReady] = useState(true);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [confirm, setConfirm] = useState("");
@@ -28,10 +29,20 @@ export function LocalPasswordSignIn() {
   useEffect(() => {
     let cancelled = false;
     fetch("/api/session", { cache: "no-store" })
-      .then((response) => response.json() as Promise<{ authenticated?: boolean; localPasswordConfigured?: boolean }>)
+      .then((response) => response.json() as Promise<{ authenticated?: boolean; localPasswordConfigured?: boolean; error?: string }>)
       .then((body) => {
         if (cancelled) return;
-        setMode(body?.authenticated && !body?.localPasswordConfigured ? "setup" : "login");
+        // A fresh clone has no session AND no credential, so the authenticated-only
+        // setup path below can never be reached. Surface that as its own state with
+        // the command that fixes it, instead of showing a form that cannot succeed.
+        if (body?.error === "SESSION_UNAVAILABLE") {
+          setDatabaseReady(false);
+          setMode("uninitialized");
+          return;
+        }
+        if (body?.authenticated && !body?.localPasswordConfigured) setMode("setup");
+        else if (!body?.authenticated && !body?.localPasswordConfigured) setMode("uninitialized");
+        else setMode("login");
       })
       .catch(() => { if (!cancelled) setMode("login"); });
     return () => { cancelled = true; };
@@ -110,6 +121,28 @@ export function LocalPasswordSignIn() {
 
   if (mode === "loading") {
     return <p className="muted" style={{ marginTop: 18 }}>正在检查登录状态…</p>;
+  }
+
+  if (mode === "uninitialized") {
+    const command = "node scripts/set-owner-password.mjs --username owner";
+    return (
+      <div style={{ marginTop: 18, display: "grid", gap: 12 }}>
+        <p className="translation-error" role="alert" style={{ margin: 0 }}>
+          {databaseReady ? "站点还没有设置登录账号，所以现在无法登录。" : "本地数据库还没有初始化，所以现在无法登录。"}
+        </p>
+        <p className="muted" style={{ margin: 0 }}>
+          {databaseReady
+            ? "这是单用户站点，账号需要在命令行创建一次。在项目目录里运行："
+            : "先初始化数据库，再创建登录账号。在项目目录里依次运行："}
+        </p>
+        <pre style={{ margin: 0, padding: "12px 14px", background: "#0f172a", color: "#e2e8f0", borderRadius: 9, fontSize: 13, overflowX: "auto" }}>
+          {databaseReady ? command : `node scripts/setup-db.mjs\n${command}`}
+        </pre>
+        <p className="muted" style={{ margin: 0 }}>
+          按提示输入用户名和密码（密码至少 10 位），然后刷新本页登录。
+        </p>
+      </div>
+    );
   }
 
   const inputStyle = { border: "1px solid #cdd9e3", borderRadius: 9, padding: "10px 12px", fontSize: 15, color: "#17253d" } as const;

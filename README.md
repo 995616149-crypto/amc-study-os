@@ -41,11 +41,21 @@ npm run dev
 # 2. Apply the schema migrations and import the textbook corpus.
 node scripts/setup-db.mjs
 
-# 3. Start again.
+# 3. Create the owner account — this is the credential you sign in with.
+node scripts/set-owner-password.mjs --username owner
+
+# 4. Start again.
 npm run dev
 ```
 
 The app is now at <http://localhost:8787>.
+
+**Step 3 is not optional.** The site is single-owner: every practice, note and
+review row belongs to one principal and the API rejects anonymous callers. A clone
+that skipped this step opens the login page but can never sign in — the login
+request fails with HTTP 503 and `reason: "no_credentials"`. The password is read
+from the terminal prompt (or `--password '...'`); it is never taken from an
+environment variable.
 
 `npm run dev` builds if `dist/` is missing or stale, then serves the built Worker
 through Wrangler on `127.0.0.1:8787`. The first run therefore takes a minute or
@@ -158,6 +168,12 @@ exactly.
 - `.wrangler/`, `.next/`, `.vinext/`, `dist/` are disposable
 
 ### Troubleshooting
+
+**The login page loads, but signing in returns HTTP 503 / "无法登录".**
+No owner account exists yet. Run `node scripts/set-owner-password.mjs --username owner`
+in the project directory, enter a password of at least 10 characters, then reload
+the page. Setting `AMC_OWNER_USERNAME` or `AMC_OWNER_PASSWORD` in the shell does
+nothing — the app does not read those variables.
 
 **`npm run dev` prints `Error: read ECONNRESET` and exits.**
 You are on the upstream HMR path. Since the fix in `scripts/run-framework.mjs`,

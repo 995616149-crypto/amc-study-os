@@ -97,7 +97,7 @@ export async function POST(request: Request) {
       const result = await signInWithLocalPassword(db(), username, password, userAgent);
       if (!result.ok) {
         const message = result.reason === "no_credentials"
-          ? "尚未设置本地用户名与密码。"
+          ? "尚未设置登录账号。请在项目目录运行：node scripts/set-owner-password.mjs --username owner"
           : result.reason === "locked"
             ? "尝试次数过多，请稍后再试。"
             : "用户名或密码不正确。";
